@@ -1,4 +1,4 @@
-@import 'colors';
+@import 'shared';
 $width-long: 66%;
 $width-short: 33%;
 $width-full: 100%;
@@ -6,6 +6,7 @@ $width-full: 100%;
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  background: black;
 }
 
 .main {
@@ -18,9 +19,9 @@ body {
 }
 
 #nav-bar {
-  height: 50px;
+  height: 80px;
   width: $width-full;
-  background: yellowgreen;
+  background: $almost-black;
 }
 
 #get-more {
@@ -30,42 +31,40 @@ body {
 
 #vod {
   height: 485px;
-  width: $width-short;
+  width: $width-short + 1%;
   background: $blue;
 }
 
 #new-packet {
-  height: 400px;
+  height: 420px;
   width: $width-long;
-  background: $green;
+  background: $purple;
 }
 
 #now-online {
-  height: 400px;
-  width: $width-short;
-  background: $dark-blue;
+  height: 420px;
+  width: $width-short + 1%;
+  background: $olive-green;
 }
 
 #lte-packet {
-  height: 350px;
-  width: 34%;
-  background: $red;
+  height: 340px;
+  width: $width-short;
+  background: $dark-grey;
 }
 
 #support {
-  height: 350px;
+  height: 340px;
   width: $width-short;
-  background: $blue;
 }
 
 #mobile-app {
-  height: 350px;
-  width: $width-short;
-  background: $green;
+  height: 340px;
+  width: $width-short + 1%;
 }
 
 #footer {
-  height: 97px;
+  height: 210px;
   width: $width-full;
-  background: royalblue;
+  background: $almost-black;
 }

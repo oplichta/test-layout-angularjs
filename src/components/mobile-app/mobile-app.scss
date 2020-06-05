@@ -1,0 +1,24 @@
+@import '../../assets/scss/shared';
+
+.mobile-app-wrapper {
+  background-image: url('../../assets/images/mobile-app.jpg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.mobile-app-title {
+  position: relative;
+  margin: 0;
+  @include style-text;
+  color: $purple;
+}
+
+.get-more-header {
+  @include style-text;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  margin: 0;
+}

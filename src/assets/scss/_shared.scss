@@ -4,6 +4,13 @@ $blue: #3194f6;
 $dark-blue: #0059fd;
 $olive-green: #84b82a;
 $purple: #675190;
+$dark-purple: #4d3c6c;
 $grey: #5c5c5c;
 $dark-grey: #262626;
-$black: #1a1a1a;
+$almost-black: #1a1a1a;
+
+@mixin style-text {
+  font-size: 24px;
+  color: white;
+  text-transform: uppercase;
+}

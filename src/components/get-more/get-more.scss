@@ -1,4 +1,5 @@
-@import '../../assets/scss/colors';
+@import '../../assets/scss/shared';
+
 .get-more-wrapper {
   background-image: url('../../assets/images/get-more.jpg');
   background-repeat: no-repeat;
@@ -20,6 +21,9 @@
   position: relative;
   top: 200px;
   left: 20px;
+  .get-more-plus-icon {
+    margin: 15px 5px;
+  }
 }
 
 .get-more-text {
