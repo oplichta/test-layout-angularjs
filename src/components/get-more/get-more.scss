@@ -1,0 +1,68 @@
+@import '../../assets/scss/colors';
+.get-more-wrapper {
+  background-image: url('../../assets/images/get-more.jpg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.get-more-header {
+  color: white;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.get-more-icons {
+  position: relative;
+  top: 200px;
+  left: 20px;
+}
+
+.get-more-text {
+  color: white;
+  text-transform: uppercase;
+  font-size: 24px;
+  position: relative;
+  top: 250px;
+  left: 20px;
+}
+
+.get-more-text1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 24px;
+  position: relative;
+  top: 250px;
+  left: 20px;
+  font-weight: 200;
+  .get-more-hbo {
+    color: $purple;
+    font-weight: 600;
+  }
+  .get-more-go {
+    color: $purple;
+    font-weight: 200;
+  }
+}
+
+.get-more-text2 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 24px;
+  position: relative;
+  top: 250px;
+  left: 20px;
+}
+
+.get-more-text3 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 24px;
+  position: relative;
+  top: 250px;
+  left: 20px;
+}

@@ -1,13 +1,11 @@
-$red: #fb1d1d;
-$green: #1fc702;
-$blue: #3194f6;
-$dark-blue: #0059fd;
-$width-long: 67%;
+@import 'colors';
+$width-long: 66%;
 $width-short: 33%;
 $width-full: 100%;
 
 body {
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .main {
@@ -15,7 +13,10 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
 #nav-bar {
   height: 50px;
   width: $width-full;
@@ -23,13 +24,12 @@ body {
 }
 
 #get-more {
-  height: 400px;
+  height: 485px;
   width: $width-long;
-  background: $red;
 }
 
 #vod {
-  height: 400px;
+  height: 485px;
   width: $width-short;
   background: $blue;
 }
