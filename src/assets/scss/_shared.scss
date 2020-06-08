@@ -1,6 +1,6 @@
 $red: #fb1d1d;
 $green: #1fc702;
-$blue: #3194f6;
+$blue: #2c8fbd;
 $dark-blue: #0059fd;
 $olive-green: #84b82a;
 $purple: #675190;
@@ -8,6 +8,11 @@ $dark-purple: #4d3c6c;
 $grey: #5c5c5c;
 $dark-grey: #262626;
 $almost-black: #1a1a1a;
+$pink: #aa2755;
+
+$title-font-size: 36px;
+// $subtitle-font-size: 24px;
+// $normal-font-size: 16px;
 
 @mixin style-text {
   font-size: 24px;

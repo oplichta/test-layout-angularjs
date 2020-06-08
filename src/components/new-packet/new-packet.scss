@@ -1,1 +1,64 @@
-$create-packet-border: #b3a8c8;
+@import '../../assets/scss/shared';
+
+.new-packet-wrapper {
+  padding: 30px;
+}
+.new-packet-title {
+  color: white;
+  font-size: 36px;
+  text-transform: uppercase;
+  align-self: start;
+  font-weight: 700;
+}
+.new-packet-subtitle {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  align-self: start;
+}
+
+.new-packet-icons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 30px 0;
+  .new-packet-icon-text-wrapper {
+    text-align: center;
+    .new-packet-text {
+      color: white;
+      text-transform: uppercase;
+      text-align: center;
+      max-width: 120px;
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+  .new-packet-plus {
+    margin: 60px 5px;
+  }
+}
+
+.new-packet-create-button {
+  text-transform: uppercase;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  border: 2px solid #b3a8c8;
+  height: 40px;
+  width: 65%;
+  background: $dark-purple;
+  margin: auto;
+  span {
+    display: inline-block;
+    margin: 9px 32%;
+  }
+}
+
+.new-packet-create-desc {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}

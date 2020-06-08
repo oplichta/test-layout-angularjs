@@ -5,13 +5,55 @@
   color: white;
   text-transform: uppercase;
 }
+.now-online-header {
+  display: flex;
+  margin: 12px 20px;
+  .now-online-title {
+    font-size: $title-font-size;
+    font-weight: 700;
+    margin: 8px 12px;
+  }
+  .now-online-separator {
+    border: 1px solid #b5d47f;
+    margin: 0 20px;
+  }
+  .now-online-watching {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    .now-online-counter {
+      font-size: 22px;
+      font-weight: 700;
+      margin: 5px 0;
+    }
+  }
+}
 
 .now-online-img-wrapper {
-  img {
-    width: 100%;
-    width: 100%;
-    height: auto;
-    left: 0px;
-    right: 0px;
+  background-image: url('../../assets/images/now-online.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 290px;
+}
+
+.now-online-controls-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25% 30px;
+}
+
+.now-online-text {
+  text-transform: none;
+  text-align: center;
+  position: relative;
+  top: -60px;
+  span {
+    text-transform: uppercase;
+    color: $olive-green;
+    font-size: 14px;
+    font-weight: 600;
   }
 }
