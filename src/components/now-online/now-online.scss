@@ -31,25 +31,36 @@
   }
 }
 
-.now-online-img-wrapper {
-  background-image: url('../../assets/images/now-online.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 290px;
+.now-online-slider {
+  height: 485px;
+  transition: all 1s ease 0s;
+  display: flex;
+}
+.now-online-slider-image {
+  width: 408px;
+}
+
+.now-online-content {
+  position: relative;
+  top: -490px;
+  left: 0px;
+  padding: 30px;
 }
 
 .now-online-controls-wrapper {
+  position: relative;
+  top: -385px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 25% 30px;
+  padding: 0 35px;
 }
 
 .now-online-text {
   text-transform: none;
   text-align: center;
   position: relative;
-  top: -60px;
+  top: 365px;
   span {
     text-transform: uppercase;
     color: $olive-green;

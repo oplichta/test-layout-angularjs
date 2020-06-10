@@ -1,24 +1,70 @@
 <div class='vod-wrapper'>
+  <div class='vod-slider'
+    ng-style="{'transform': 'translateX(-' + moveLength + 'px)'}">
+    <div class="vod-slider-item">
+      <img class="vod-slider-image"
+        src="../../assets/images/vod.jpg" />
+      <div class="vod-content">
+        <div class="vod-footer">
+          <div class="vod-subtitle">Kapitan Ameryka:<br /> Zimowy żołnierz
+            <div class="vod-label">Nowości - Akcja<span>14,00 zł</span></div>
+          </div>
+          <div class="vod-want-to-see">
+            <div>film</div>
+            <div>obejrzy</div>
+            <span>125</span>
+            <img src="../../assets/images/people-icon.png"
+              alt="people-icon">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="vod-slider-item">
+      <img class="vod-slider-image"
+        src="../../assets/images/vod-iron-man.jpg" />
+      <div class="vod-content">
+        <div class="vod-footer">
+          <div class="vod-subtitle">Kapitan Ameryka:<br /> Zimowy żołnierz
+            <div class="vod-label">Nowości - Akcja<span>14,00 zł</span></div>
+          </div>
+          <div class="vod-want-to-see">
+            <div>film</div>
+            <div>obejrzy</div>
+            <span>125</span>
+            <img src="../../assets/images/people-icon.png"
+              alt="people-icon">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="vod-slider-item">
+      <img class="vod-slider-image"
+        src="../../assets/images/vod-capitan-marvel.jpg" />
+      <div class="vod-content">
+        <div class="vod-footer">
+          <div class="vod-subtitle">Kapitan Ameryka:<br /> Zimowy żołnierz
+            <div class="vod-label">Nowości - Akcja<span>14,00 zł</span></div>
+          </div>
+          <div class="vod-want-to-see">
+            <div>film</div>
+            <div>obejrzy</div>
+            <span>125</span>
+            <img src="../../assets/images/people-icon.png"
+              alt="people-icon">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="vod-title">
     VOD <span>Video na żądanie</span>
   </div>
   <div class="vod-controls-wrapper">
-    <img src="../../assets/images/rounded-triangle-left-icon.png"
+    <img ng-click="scrollToPrevPanel()"
+      src="../../assets/images/rounded-triangle-left-icon.png"
       alt="left-icon">
-    <img src="../../assets/images/rounded-triangle-right-icon.png"
+    <img ng-click="scrollToNextPanel()"
+      src="../../assets/images/rounded-triangle-right-icon.png"
       alt="right-icon">
   </div>
-  <div class="vod-footer">
-    <div class="vod-subtitle">Kapitan Ameryka:<br /> Zimowy żołnierz
-      <div class="vod-label">Nowości - Akcja<span>14,00 zł</span></div>
-    </div>
-    <div class="vod-want-to-see">
-      <div>film</div>
-      <div>obejrzy</div>
-      <span>125</span>
-      <img src="../../assets/images/people-icon.png"
-        alt="people-icon">
-    </div>
-  </div>
-
 </div>

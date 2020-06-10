@@ -6,7 +6,25 @@
   text-transform: uppercase;
 }
 
+.vod-slider {
+  height: 485px;
+  transition: all 1s ease 0s;
+  display: flex;
+}
+.vod-slider-image {
+  width: 408px;
+}
+
+.vod-content {
+  position: relative;
+  top: -490px;
+  left: 0px;
+  padding: 30px;
+}
 .vod-title {
+  position: relative;
+  top: -455px;
+  left: 30px;
   font-size: 42px;
   font-weight: 600;
   span {
@@ -18,12 +36,16 @@
 }
 
 .vod-controls-wrapper {
+  position: relative;
+  top: -260px;
   display: flex;
   justify-content: space-between;
-  margin: 125px 0;
+  margin: 0 15px;
 }
 
 .vod-footer {
+  position: relative;
+  top: 335px;
   display: flex;
   justify-content: space-between;
   align-items: center;

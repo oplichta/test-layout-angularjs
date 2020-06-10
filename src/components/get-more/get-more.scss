@@ -1,8 +1,10 @@
 @import '../../assets/scss/shared';
 
 .get-more-wrapper {
-  width: 100%;
-  height: 100%;
+  position: relative;
+  top: -470px;
+  left: 30px;
+  width: 740px;
 }
 
 .get-more-header {
@@ -56,12 +58,43 @@
   font-weight: 900;
   margin-top: -115px;
   margin-left: 200px;
+  position: relative;
+  top: 0px;
+  left: 0px;
   span {
     font-size: 40px;
     font-weight: 600;
   }
-  .get-more-dots-icon {
-    float: right;
-    margin-top: 105px;
+}
+
+.get-more-slider {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 800px;
+  height: 485px;
+  background: white;
+  display: flex;
+  transition: all 300ms ease 0s;
+  z-index: -1;
+}
+.get-more-dots-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  img {
+    margin: 3px;
   }
+  .active {
+    background-image: url('../../assets/images/dot-active-icon.png');
+  }
+}
+
+.get-more-slider {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 800px;
+  height: 485px;
+  transition: all 1s ease 0s;
+  z-index: -1;
 }

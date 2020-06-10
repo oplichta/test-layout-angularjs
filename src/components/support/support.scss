@@ -7,7 +7,7 @@
 }
 
 .support-title {
-  font-size: 40px;
+  font-size: $title-font-size;
   font-weight: 700;
 }
 
@@ -38,4 +38,5 @@
   color: $olive-green;
   text-transform: none;
   font-size: 14px;
+  margin: -10px 0;
 }

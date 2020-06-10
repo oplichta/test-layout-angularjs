@@ -20,6 +20,7 @@ body {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 #nav-bar {
@@ -29,23 +30,18 @@ body {
 }
 
 #get-more {
-  background-image: url('../../assets/images/get-more.jpg');
+  background-image: url('../../assets/images/get-more.png');
   background-repeat: no-repeat;
   background-size: auto;
   box-sizing: border-box;
-  padding: 30px;
   height: 485px;
   width: $width-long;
 }
 
 #vod {
-  background-image: url('../../assets/images/vod.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-sizing: border-box;
-  padding: 30px;
   height: 485px;
   width: $width-short + 1%;
+  overflow: hidden;
 }
 
 #new-packet {
@@ -59,6 +55,7 @@ body {
   width: $width-short + 1%;
   background: $olive-green;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 #lte-packet {

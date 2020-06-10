@@ -3,24 +3,52 @@
     <div class="now-online-title"> teraz<br /> w tv online</div>
     <div class="now-online-separator"></div>
     <div class="now-online-watching">
-      teraz<span>ogląda</span><span class="now-online-counter">258</span>
+      teraz<span>ogląda</span><span class="now-online-counter">{{nowWatching}}</span>
       <img src="../../assets/images/people-icon.png"
         alt="people-icon">
     </div>
   </div>
-
-  <div class="now-online-img-wrapper">
-    <div class="now-online-controls-wrapper">
-      <img class="left-icon"
-        src="../../assets/images/rounded-triangle-left-icon.png"
-        alt="now-online">
-      <img class="play-icon"
-        src="../../assets/images/play-icon.png"
-        alt="now-online">
-      <img class="right-icon"
-        src="../../assets/images/rounded-triangle-right-icon.png"
-        alt="now-online">
+  <div class='now-online-slider'
+    ng-style="{'transform': 'translateX(-' + moveLength + 'px)'}">
+    <div class="now-online-slider-item">
+      <img class="now-online-slider-image"
+        src="../../assets/images/now-online.jpg" />
+      <div class="now-online-content">
+        <div class="now-online-text">Anatomia magii <br />
+          <span>discovery channel</span>
+        </div>
+      </div>
     </div>
-    <div class="now-online-text">Anatomia magii <br /><span>discovery channel</span></div>
+    <div class="now-online-slider-item">
+      <img class="now-online-slider-image"
+        src="../../assets/images/now-online-cycling.jpg" />
+      <div class="now-online-content">
+        <div class="now-online-text">Tour de Pologne<br />
+          <span>Eurosport</span>
+        </div>
+      </div>
+    </div>
+    <div class="now-online-slider-item">
+      <img class="now-online-slider-image"
+        src="../../assets/images/now-online-champions-league.jpg" />
+      <div class="now-online-content">
+        <div class="now-online-text">Champions League<br />
+          <span>Eurosport 2</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="now-online-controls-wrapper">
+    <img class="left-icon"
+      ng-click="scrollToPrevPanel()"
+      src="../../assets/images/rounded-triangle-left-icon.png"
+      alt="now-online">
+    <img class="play-icon"
+      src="../../assets/images/play-icon.png"
+      alt="now-online">
+    <img class="right-icon"
+      ng-click="scrollToNextPanel()"
+      src="../../assets/images/rounded-triangle-right-icon.png"
+      alt="now-online">
   </div>
 </div>

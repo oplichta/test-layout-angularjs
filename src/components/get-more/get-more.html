@@ -1,3 +1,12 @@
+<div class='get-more-slider'
+  ng-style="{'transform': 'translateX(-' + moveLength + 'px)'}">
+  <img ng-class="dotActive('one')"
+    src="../../assets/images/get-more-slider.jpg" />
+  <img ng-class="dotActive('two')"
+    src="../../assets/images/get-more-slider1.jpg" />
+  <img ng-class="dotActive('three')"
+    src="../../assets/images/get-more-slider2.jpg" />
+</div>
 <div class='get-more-wrapper'>
   <div class='get-more-header'>Zyskaj więcej</div>
   <div class="get-more-icon-wrapper">
@@ -12,8 +21,19 @@
   </div>
   <div class="get-more-text2">dostaniesz za</div>
   <div class="get-more-text3">1<span>zł</span>
-    <img class="get-more-dots-icon"
-      src="../../assets/images/dots-icon.png"
-      alt="dots-icon"></div>
-
+  </div>
+  <div class="get-more-dots-wrapper">
+    <img ng-click="scrollToPanel('one')"
+      ng-class="dotActive('one')"
+      src="../../assets/images/dot-icon.png"
+      alt="dots-icon">
+    <img ng-click="scrollToPanel('two')"
+      ng-class="dotActive('two')"
+      src="../../assets/images/dot-icon.png"
+      alt="dots-icon1">
+    <img ng-click="scrollToPanel('three')"
+      ng-class="dotActive('three')"
+      src="../../assets/images/dot-icon.png"
+      alt="dots-icon2">
+  </div>
 </div>
