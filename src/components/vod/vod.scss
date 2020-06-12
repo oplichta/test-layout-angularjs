@@ -37,22 +37,47 @@
 
 .vod-controls-wrapper {
   position: relative;
-  top: -260px;
+  top: -310px;
   display: flex;
   justify-content: space-between;
   margin: 0 15px;
+  height: 45px;
+  .vod-buy-now-wrapper {
+    height: 45px;
+    width: 180px;
+    cursor: pointer;
+    .vod-buy-now {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 45px;
+      width: 180px;
+      background-image: url('../../assets/images/vod-buy-now.png');
+      text-transform: uppercase;
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-sizing: border-box;
+      font-weight: 600;
+    }
+  }
 }
 
 .vod-footer {
   position: relative;
   top: 335px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   .vod-subtitle {
     text-transform: none;
   }
-
+  .vod-separator {
+    height: 80px;
+    border-left: 1px solid #bababa;
+    opacity: 0.4;
+    margin-left: 78px;
+    margin-right: 30px;
+  }
   .vod-label {
     color: $olive-green;
     font-size: 16px;

@@ -1,6 +1,9 @@
 @import '../../assets/scss/shared';
 
-.mobile-app-wrapper {
+.mobile-app-content {
+  box-sizing: border-box;
+  padding: 30px;
+  height: 340px;
 }
 
 .mobile-app-title {
@@ -13,7 +16,7 @@
 
 .mobile-app-text {
   color: #757575;
-  font-size: 19px;
+  font-size: 17px;
   margin-top: 10px;
   font-weight: 400;
   max-width: 365px;
@@ -22,8 +25,48 @@
 .mobile-app-icon-wrapper {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   margin-top: 130px;
+  height: 45px;
   .mobile-app-icon {
     margin: 0 5px;
+  }
+}
+
+.mobile-app-layer-content {
+  box-sizing: border-box;
+  padding: 30px;
+  height: 340px;
+  background: $purple;
+  color: white;
+  cursor: pointer;
+  .mobile-app-layer-title {
+    margin: 0;
+    @include style-text;
+    font-size: $title-font-size;
+    font-weight: 600;
+    color: white;
+  }
+
+  .mobile-app-layer-text {
+    font-size: 17px;
+    font-weight: 400;
+    margin: 11px 0;
+  }
+
+  .mobile-app-layer-text2 {
+    font-size: 17px;
+    font-weight: 400;
+    margin: 15px 0;
+  }
+
+  .mobile-app-layer-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 45px;
+    .mobile-app-layer-icon {
+      margin: 0 5px;
+    }
   }
 }

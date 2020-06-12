@@ -1,16 +1,47 @@
-<div class="mobile-app-wrapper">
-  <div class="mobile-app-title">aplikacja
+<div class="mobile-app-wrapper"
+  ng-mouseover="showBuyNow = true"
+  ng-mouseout="showBuyNow = false">
+  <div class="mobile-app-content"
+    ng-show="!showBuyNow">
+    <div class="mobile-app-title">aplikacja
+    </div>
+    <div class="mobile-app-text">
+      Lorem ipsum dolor sit amet enim.
+      Etiam ullamcorper. Suspendisse a pellentesque<br /> dui, non felis.
+    </div>
+    <div class="mobile-app-icon-wrapper">
+      <div class="mobile-app-icon"><img src="../../assets/images/android-icon.png"
+          alt=""></div>
+      <div class="mobile-app-icon"><img src="../../assets/images/apple-icon.png"
+          alt=""></div>
+      <div class="mobile-app-icon"><img src="../../assets/images/windows-icon.png"
+          alt=""></div>
+    </div>
   </div>
-  <div class="mobile-app-text">
-    Lorem ipsum dolor sit amet enim.
-    Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.
-  </div>
-  <div class="mobile-app-icon-wrapper">
-    <div class="mobile-app-icon"><img src="../../assets/images/android-icon.png"
-        alt=""></div>
-    <div class="mobile-app-icon"><img src="../../assets/images/apple-icon.png"
-        alt=""></div>
-    <div class="mobile-app-icon"><img src="../../assets/images/windows-icon.png"
-        alt=""></div>
+  <div class="mobile-app-layer-content"
+    ng-show="showBuyNow">
+    <div class="mobile-app-layer-title">aplikacja
+    </div>
+    <div class="mobile-app-layer-text">
+      Lorem ipsum dolor sit amet enim.
+      Etiam ullamcorper. Suspendisse a pellentesque<br /> dui, non felis. Maecenas malesuada elit lectus
+      felis,
+      malesuada ultricies. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed
+      vestibulum
+    </div>
+    <div class="mobile-app-layer-text2">
+      Pobierz aplikację na swój telefon.<br /> Wybierz system operacyjny:
+    </div>
+    <div class="mobile-app-layer-icon-wrapper">
+      <div class="mobile-app-layer-icon">
+        <img src="../../assets/images/mobile-app-layer-android-icon.png"
+          alt=""></div>
+      <div class="mobile-app-layer-icon">
+        <img src="../../assets/images/mobile-app-layer-apple-icon.png"
+          alt=""></div>
+      <div class="mobile-app-layer-icon">
+        <img src="../../assets/images/mobile-app-layer-windows-icon.png"
+          alt=""></div>
+    </div>
   </div>
 </div>

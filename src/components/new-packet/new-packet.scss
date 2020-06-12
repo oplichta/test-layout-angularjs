@@ -51,10 +51,9 @@
   width: 65%;
   background: $dark-purple;
   margin: auto;
-  span {
-    display: inline-block;
-    margin: 9px 32%;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .new-packet-create-desc {

@@ -9,6 +9,7 @@ export default (ngModule) => {
   VodController.$inject = ['$scope'];
   function VodController($scope) {
     $scope.moveLength = 0;
+    $scope.showBuyNow = false;
     const step = 408;
     const maxLength = 816;
 
@@ -28,6 +29,10 @@ export default (ngModule) => {
       } else {
         $scope.moveLength = 0;
       }
+    };
+
+    $scope.buyNow = () => {
+      alert('You bought a movie!');
     };
   }
 };

@@ -3,12 +3,13 @@
     ng-style="{'transform': 'translateX(-' + moveLength + 'px)'}">
     <div class="vod-slider-item">
       <img class="vod-slider-image"
-        src="../../assets/images/vod.jpg" />
+        src="../../assets/images/vod-capitan-america.jpg" />
       <div class="vod-content">
         <div class="vod-footer">
           <div class="vod-subtitle">Kapitan Ameryka:<br /> Zimowy żołnierz
             <div class="vod-label">Nowości - Akcja<span>14,00 zł</span></div>
           </div>
+          <div class="vod-separator"></div>
           <div class="vod-want-to-see">
             <div>film</div>
             <div>obejrzy</div>
@@ -24,13 +25,14 @@
         src="../../assets/images/vod-iron-man.jpg" />
       <div class="vod-content">
         <div class="vod-footer">
-          <div class="vod-subtitle">Kapitan Ameryka:<br /> Zimowy żołnierz
-            <div class="vod-label">Nowości - Akcja<span>14,00 zł</span></div>
+          <div class="vod-subtitle">Iron Man 3
+            <div class="vod-label">Nowości - Akcja<span>20,00 zł</span></div>
           </div>
+          <div class="vod-separator"></div>
           <div class="vod-want-to-see">
             <div>film</div>
             <div>obejrzy</div>
-            <span>125</span>
+            <span>643</span>
             <img src="../../assets/images/people-icon.png"
               alt="people-icon">
           </div>
@@ -42,13 +44,14 @@
         src="../../assets/images/vod-capitan-marvel.jpg" />
       <div class="vod-content">
         <div class="vod-footer">
-          <div class="vod-subtitle">Kapitan Ameryka:<br /> Zimowy żołnierz
-            <div class="vod-label">Nowości - Akcja<span>14,00 zł</span></div>
+          <div class="vod-subtitle">Kapitan Marvel
+            <div class="vod-label">Nowości - Akcja<span>24,00 zł</span></div>
           </div>
+          <div class="vod-separator"></div>
           <div class="vod-want-to-see">
             <div>film</div>
             <div>obejrzy</div>
-            <span>125</span>
+            <span>369</span>
             <img src="../../assets/images/people-icon.png"
               alt="people-icon">
           </div>
@@ -63,6 +66,15 @@
     <img ng-click="scrollToPrevPanel()"
       src="../../assets/images/rounded-triangle-left-icon.png"
       alt="left-icon">
+    <div class="vod-buy-now-wrapper"
+      ng-mouseover="showBuyNow = true"
+      ng-mouseout="showBuyNow = false">
+      <div class="vod-buy-now"
+        ng-show="showBuyNow"
+        ng-click="buyNow()">kup film
+      </div>
+    </div>
+
     <img ng-click="scrollToNextPanel()"
       src="../../assets/images/rounded-triangle-right-icon.png"
       alt="right-icon">

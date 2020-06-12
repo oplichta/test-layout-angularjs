@@ -3,6 +3,10 @@
 $menu-btn: #3c3c3c;
 $hr-color: #272727;
 $separator-color: #313131;
+$text-color: #bababa;
+$vod-text-color: #5a5a5a;
+$vod-price-color: #2c8fbd;
+$title-font-size: 22px;
 
 .header-wrapper {
   width: 1200px;
@@ -14,6 +18,7 @@ $separator-color: #313131;
   height: 80px;
   background: $menu-btn;
   text-align: center;
+  cursor: pointer;
   img {
     margin-top: 30px;
   }
@@ -56,23 +61,103 @@ $separator-color: #313131;
 
 .header-packet {
   background: $almost-black;
-  hr {
-    border: 1px solid $grey;
+  padding: 30px;
+  .header-packet-title {
+    text-transform: uppercase;
+    color: $purple;
+    font-weight: 600;
+    font-size: $title-font-size;
+  }
+
+  .header-packet-tv,
+  .header-packet-int,
+  .header-packet-tel,
+  .header-packet-mobile-net {
+    display: flex;
+    color: $text-color;
+    img {
+      width: 20px;
+      height: 20px;
+      margin: 0 10px;
+      object-fit: contain;
+    }
+  }
+
+  .header-packet-separator {
+    border-top: 1px solid $grey;
+    margin: 5px 0;
+    opacity: 0.4;
   }
 }
 
 .header-vod {
+  padding: 30px;
+
   .header-vod-title {
     color: $olive-green;
+    font-size: $title-font-size;
+    font-weight: 600;
   }
+
+  .header-vod-subtitle {
+    color: $vod-text-color;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+
+  .header-vod-separator {
+    border-top: 1px solid #e1e1e1;
+    margin: 10px 0;
+  }
+
   .header-vod-sale {
     display: flex;
     img {
-      margin: 0 10px;
+      object-fit: contain;
     }
     .header-vod-info {
       flex-direction: column;
+      color: $vod-text-color;
+      margin-left: 10px;
+      .header-vod-sale-title {
+        color: $olive-green;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+      }
+      .header-vod-sale-subtitle {
+        font-weight: 400;
+        font-size: 20px;
+      }
+
+      .header-vod-label {
+        text-transform: uppercase;
+        font-size: 12px;
+      }
+      .header-vod-price {
+        color: $vod-price-color;
+        font-weight: 600;
+      }
     }
+  }
+}
+
+.header-tv-online {
+  background: $almost-black;
+  height: 115px;
+  color: $text-color;
+  padding: 30px;
+
+  .header-tv-online-title {
+    text-transform: uppercase;
+    color: $olive-green;
+    font-weight: 600;
+    font-size: $title-font-size;
+    margin-bottom: 15px;
+  }
+  .header-tv-online-desc {
+    opacity: 0.8;
   }
 }
 
