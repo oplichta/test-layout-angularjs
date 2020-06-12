@@ -23,7 +23,7 @@ body {
   overflow: hidden;
 }
 
-#nav-bar {
+#header {
   height: 80px;
   width: $width-full;
   background: $almost-black;
@@ -93,31 +93,15 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
-  #get-more {
-    @include mobile-width-full;
-  }
-
-  #vod {
-    @include mobile-width-full;
-  }
-
-  #new-packet {
-    @include mobile-width-full;
-  }
-
-  #now-online {
-    @include mobile-width-full;
-  }
-
-  #lte-packet {
-    @include mobile-width-full;
-  }
-
-  #support {
-    @include mobile-width-full;
-  }
-
-  #mobile-app {
+  #header,
+  #get-more,
+  #vod,
+  #new-packet,
+  #now-online,
+  #lte-packet,
+  #support,
+  #mobile-app,
+  #footer {
     @include mobile-width-full;
   }
 }

@@ -1,0 +1,84 @@
+@import '../../assets/scss/shared';
+
+$menu-btn: #3c3c3c;
+$hr-color: #272727;
+$separator-color: #313131;
+
+.header-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header-show-btn {
+  width: 80px;
+  height: 80px;
+  background: $menu-btn;
+  text-align: center;
+  img {
+    margin-top: 30px;
+  }
+}
+
+.header-menu {
+  height: 585px;
+  width: 240px;
+  background: white;
+  position: relative;
+  z-index: 20;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-info {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: $grey;
+  .header-support {
+    span {
+      color: $olive-green;
+      font-weight: 800;
+    }
+    img {
+      height: 16px;
+      margin: 0 5px;
+    }
+  }
+  .header-separator {
+    height: 20px;
+    border: 1px solid $separator-color;
+    margin: 0 10px;
+  }
+}
+
+.header-packet {
+  background: $almost-black;
+  hr {
+    border: 1px solid $grey;
+  }
+}
+
+.header-vod {
+  .header-vod-title {
+    color: $olive-green;
+  }
+  .header-vod-sale {
+    display: flex;
+    img {
+      margin: 0 10px;
+    }
+    .header-vod-info {
+      flex-direction: column;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header-wrapper {
+    width: 100%;
+    margin: 0;
+  }
+}

@@ -1,0 +1,77 @@
+<div class="header-wrapper">
+  <div class="header-content">
+    <div class="header-show-btn"
+      ng-click="showMenu = !showMenu">
+      <img src="../../assets/images/menu-show-icon.png"
+        alt=""></div>
+    <div class="header-info">
+      <div class="header-support">Centrum obsługi klienta
+        <span>
+          <img src="../../assets/images/green-tele-icon.png"
+            alt="/tele-icon">800 080 800
+        </span>
+      </div>
+      <div class="header-separator"></div>
+      <div class="header-search">
+        <img src="../../assets/images/header-search-icon.png"
+          alt="search-icon">
+        szukaj</div>
+      <div class="header-separator"></div>
+      <div class="header-subscriber-zone">
+        <img src="../../assets/images/header-person-icon.png"
+          alt="person-icon">
+        strefa abonenta</div>
+    </div>
+  </div>
+  <div class="header-menu"
+    ng-if="showMenu">
+    <div class="header-packet">
+      <div class="header-packet-tv">
+        <img src="../../assets/images/menu-packet-tv-icon.png"
+          alt="tv-icon">
+        <div>telewizja</div>
+        <hr>
+      </div>
+      <div class="header-packet-int">
+        <img src="../../assets/images/menu-packet-mouse-icon.png"
+          alt="tv-icon">
+        <div>internet</div>
+      </div>
+      <div class="header-packet-tel">
+        <img src="../../assets/images/menu-packet-tel-icon.png"
+          alt="tv-icon">
+        <div>telefon</div>
+      </div>
+      <div class="header-packet-mobile-net">
+        <img src="../../assets/images/menu-packet-mobile-net-icon.png"
+          alt="tv-icon">
+        <div>internet mobilny</div>
+      </div>
+    </div>
+    <div class="header-vod">
+      <div class="header-vod-title">VOD</div>
+      <div class="header-vod-subtitle">Oglądaj wtedy, gdy masz czas i ochotę</div>
+      <hr class="header-vod-hr">
+      <div class="header-vod-sale">
+        <img src="../../assets/images/menu-vod-icon.jpg"
+          alt="menu-vod">
+        <div class="header-vod-info">
+          <div class="header-vod-sale-title">dziś w promocji</div>
+          <div class="header-vod-sale-subtitle">Ocalony</div>
+          <div class="header-vod-label">dramat</div>
+          <div class="header-vod-price">5,00 zł -> KUP</div>
+        </div>
+
+      </div>
+      <hr class="header-vod-hr">
+    </div>
+    <div class="header-tv-online">
+      <div class="header-tv-online-title">
+        tv online
+      </div>
+      <div class="header-tv-online-desc">
+        Oglądaj telewizję przez internet na czym chcesz: komputer, tablet, telefon
+      </div>
+    </div>
+  </div>
+</div>
