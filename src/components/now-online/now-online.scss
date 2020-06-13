@@ -1,17 +1,21 @@
 @import '../../assets/scss/shared';
 
 .now-online-wrapper {
+  height: 420px;
   font-size: 24px;
   color: white;
   text-transform: uppercase;
 }
 .now-online-header {
   display: flex;
-  margin: 12px 20px;
+  margin: 7px 20px;
   .now-online-title {
     font-size: $title-font-size;
     font-weight: 700;
     margin: 8px 12px;
+    div {
+      margin-bottom: -10px;
+    }
   }
   .now-online-separator {
     border-left: 1px solid #b5d47f;
@@ -33,24 +37,32 @@
 }
 
 .now-online-slider {
-  height: 485px;
+  max-height: 290px;
   transition: all 1s ease 0s;
   display: flex;
-}
-.now-online-slider-image {
-  width: 408px;
+  .now-online-slider-image {
+    width: 408px;
+    height: 290px;
+  }
+  .now-online-content {
+    position: relative;
+    top: -490px;
+    left: 0px;
+    padding: 30px;
+  }
 }
 
-.now-online-content {
+.now-online-rectangle {
   position: relative;
-  top: -490px;
-  left: 0px;
-  padding: 30px;
+  top: -312px;
+  left: 183px;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
 }
-
 .now-online-controls-wrapper {
   position: relative;
-  top: -385px;
+  top: -230px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -61,7 +73,10 @@
   text-transform: none;
   text-align: center;
   position: relative;
-  top: 365px;
+  top: 380px;
+  div {
+    margin-bottom: -5px;
+  }
   span {
     text-transform: uppercase;
     color: $olive-green;

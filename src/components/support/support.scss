@@ -15,10 +15,7 @@
   color: $olive-green;
   font-size: 14px;
   font-weight: 600;
-}
-.support-avatar {
-  width: 140px;
-  margin: 0 5px;
+  margin-top: -6px;
 }
 
 .support-avatar-text-wrapper {
@@ -26,10 +23,23 @@
   display: flex;
   align-items: center;
   font-size: 14px;
+  .support-avatar {
+    width: 140px;
+    margin-right: 15px;
+  }
   .support-text-icon-wrapper {
     display: flex;
     align-items: center;
-    margin: 20px 5px;
+    img {
+      width: 30px;
+      object-fit: none;
+    }
+  }
+  .support-separator {
+    width: 100%;
+    border-top: 1px solid white;
+    opacity: 0.1;
+    margin: 15px 0;
   }
 }
 
@@ -38,5 +48,5 @@
   color: $olive-green;
   text-transform: none;
   font-size: 14px;
-  margin: -10px 0;
+  margin-top: 15px;
 }

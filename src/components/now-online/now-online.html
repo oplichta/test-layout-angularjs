@@ -1,6 +1,9 @@
 <div class="now-online-wrapper">
   <div class="now-online-header">
-    <div class="now-online-title"> teraz<br /> w tv online</div>
+    <div class="now-online-title">
+      <div>teraz</div>
+      <span>w tv online</span>
+    </div>
     <div class="now-online-separator"></div>
     <div class="now-online-watching">
       teraz<span>ogląda</span><span class="now-online-counter">{{nowWatching}}</span>
@@ -14,7 +17,8 @@
       <img class="now-online-slider-image"
         src="../../assets/images/now-online.jpg" />
       <div class="now-online-content">
-        <div class="now-online-text">Anatomia magii <br />
+        <div class="now-online-text">
+          <div>Anatomia magii</div>
           <span>discovery channel</span>
         </div>
       </div>
@@ -38,6 +42,9 @@
       </div>
     </div>
   </div>
+  <img class="now-online-rectangle"
+    src="../../assets/images/now-online-rectangle.png"
+    alt="rectangle">
   <div class="now-online-controls-wrapper">
     <img class="left-icon"
       ng-click="scrollToPrevPanel()"

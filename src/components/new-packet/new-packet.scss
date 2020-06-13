@@ -2,6 +2,8 @@
 
 .new-packet-wrapper {
   padding: 30px;
+  box-sizing: border-box;
+  height: 100%;
 }
 .new-packet-title {
   color: white;
@@ -50,7 +52,7 @@
   height: 40px;
   width: 65%;
   background: $dark-purple;
-  margin: auto;
+  margin: 5px auto;
   display: flex;
   justify-content: center;
   align-items: center;
