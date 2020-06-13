@@ -3,9 +3,112 @@
 $menu-btn: #3c3c3c;
 $hr-color: #272727;
 $separator-color: #313131;
+$text-color: #5a5a5a;
+$width-long: 66%;
+$title-font: 32px;
 
 .footer-wrapper {
   width: 1200px;
+  display: flex;
+  margin: 30px auto;
+  padding-top: 10px;
+  color: $text-color;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer-content {
+  width: $width-long;
+
+  .footer-content-top {
+    display: flex;
+    justify-content: space-between;
+    .footer-content-app {
+      .footer-download-app {
+        display: flex;
+        color: $purple;
+        margin: 10px 0;
+        img {
+          width: 66px;
+          height: 44px;
+          margin-right: 5px;
+        }
+        span {
+          font-size: $title-font;
+          font-weight: 600;
+        }
+      }
+    }
+    .footer-tel-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      span {
+        color: $olive-green;
+        margin-top: 10px;
+      }
+      .footer-tel {
+        color: $olive-green;
+        font-size: $title-font;
+        font-weight: 600;
+        text-align: right;
+        div {
+          margin-bottom: -15px;
+        }
+        span {
+          font-size: 12px;
+          font-weight: 400;
+          color: $text-color;
+          text-transform: none;
+        }
+      }
+    }
+  }
+  .footer-content-separator {
+    width: 100%;
+    border-top: 1px solid $text-color;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  .footer-content-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .footer-content-links-text {
+      display: flex;
+      div {
+        margin: 0px 10px;
+      }
+    }
+  }
+}
+.footer-content-right {
+  width: 34%;
+  text-align: right;
+  .footer-content-tel {
+    color: $olive-green;
+    margin-top: 10px;
+    img {
+      margin: 0 5px;
+    }
+    span {
+      font-size: $title-font;
+      font-weight: 600;
+    }
+  }
+  .footer-content-mob-tel {
+    margin: 15px 0;
+    span {
+      color: $olive-green;
+      font-size: 22px;
+      font-weight: 600;
+    }
+    div {
+      font-size: 12px;
+      text-transform: none;
+    }
+  }
 }
 
 @media only screen and (max-width: 480px) {
