@@ -63,3 +63,15 @@
   font-size: 20px;
   text-align: center;
 }
+
+@media only screen and (max-width: 480px) {
+  .new-packet-title {
+    font-size: 27px;
+  }
+  .new-packet-icons {
+    margin: 10px 0;
+    .new-packet-plus-to-hide {
+      display: none;
+    }
+  }
+}

@@ -81,7 +81,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: border-box;
-  // padding: 30px;
   height: 340px;
   width: $width-short + 1%;
 }
@@ -103,5 +102,16 @@ body {
   #mobile-app,
   #footer {
     @include mobile-width-full;
+  }
+
+  #get-more {
+    background-position: center;
+  }
+  #new-packet {
+    height: 600px;
+  }
+
+  #footer {
+    height: 525px;
   }
 }

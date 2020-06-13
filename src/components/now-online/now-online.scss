@@ -84,3 +84,11 @@
     font-weight: 600;
   }
 }
+
+@media only screen and (max-width: 480px) {
+  .now-online-header {
+    .now-online-title {
+      font-size: 35px;
+    }
+  }
+}

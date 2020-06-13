@@ -19,6 +19,7 @@ $title-font: 32px;
   width: $width-long;
   .footer-content-top {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     .footer-content-app {
       .footer-download-app {
@@ -109,8 +110,38 @@ $title-font: 32px;
 }
 
 @media only screen and (max-width: 480px) {
-  .footer-wrapper {
+  .footer-wrapper,
+  .footer-content,
+  .footer-content-top,
+  .footer-tel-info,
+  .footer-content-links,
+  .footer-content-right {
     width: 100%;
-    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-content .footer-content-links {
+    justify-content: center;
+  }
+
+  .footer-content .footer-content-top .footer-tel-info {
+    align-items: center;
+  }
+
+  .footer-content .footer-content-top {
+    justify-content: center;
+  }
+
+  .footer-content-icons {
+    margin: 10px;
+    img {
+      margin: 0 5px;
+    }
+  }
+  .footer-content-right {
+    margin-top: 20px;
   }
 }

@@ -6,11 +6,20 @@ export default (ngModule) => {
     controllerAs: 'GetMoreController',
   });
 
-  GetMoreController.$inject = ['$scope'];
-  function GetMoreController($scope) {
+  GetMoreController.$inject = ['$scope', '$window'];
+  function GetMoreController($scope, $window) {
     $scope.slideId = 0;
     $scope.moveLength = 0;
-    const step = 800;
+    let step = 800;
+
+    angular.element($window).bind('resize', function () {
+      $scope.width = $window.innerWidth;
+      if ($scope.width < 480) {
+        step = 480;
+      } else {
+        step = 800;
+      }
+    });
 
     $scope.goToSlideId = (slideId) => {
       if (slideId !== $scope.slideId) {

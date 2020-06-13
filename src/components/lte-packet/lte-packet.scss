@@ -58,3 +58,9 @@
     color: $purple;
   }
 }
+
+@media only screen and (max-width: 480px) {
+  .lte-packet-title {
+    font-size: 38px;
+  }
+}
