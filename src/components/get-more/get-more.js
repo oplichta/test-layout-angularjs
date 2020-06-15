@@ -13,13 +13,22 @@ export default (ngModule) => {
     let step = 800;
     let _id = 1;
 
-    angular.element($window).bind('resize', function () {
+    $scope.setSliderStep = () => {
       $scope.width = $window.innerWidth;
       if ($scope.width < 480) {
         step = 480;
       } else {
         step = 800;
       }
+    };
+
+    $scope.howWithIs = () => {
+      $scope.setSliderStep();
+    };
+    $scope.howWithIs();
+
+    angular.element($window).bind('resize', function () {
+      $scope.setSliderStep();
     });
 
     $scope.scrollToPanel = (id) => {

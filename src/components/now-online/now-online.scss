@@ -95,10 +95,19 @@
 
 @media only screen and (max-width: 480px) {
   @include title-mobile-font-size;
+
+  .now-online-slider .now-online-slider-image {
+    width: 100vw;
+    height: 100%;
+  }
 }
 
-@media only screen and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
   @include title-mobile-font-size;
+
+  .now-online-slider .now-online-slider-image {
+    width: 50vw;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -113,5 +122,9 @@
     .now-online-separator {
       margin: 10px 10px;
     }
+  }
+
+  .now-online-slider .now-online-slider-image {
+    width: 34vw;
   }
 }

@@ -70,6 +70,14 @@
     }
   }
 }
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .mobile-app-title,
+  .mobile-app-layer-content .mobile-app-layer-title {
+    font-size: $title-font-size-mobile;
+  }
+}
+
 @media (min-width: 769px) and (max-width: 1024px) {
   .mobile-app-content,
   .mobile-app-layer-content {
@@ -80,8 +88,8 @@
     margin-top: 150px;
   }
 
-  .mobile-app-layer-title,
-  .mobile-app-layer-title {
+  .mobile-app-title,
+  .mobile-app-layer-content .mobile-app-layer-title {
     font-size: $title-font-size-mobile;
   }
 }

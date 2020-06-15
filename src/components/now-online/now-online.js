@@ -6,12 +6,39 @@ export default (ngModule) => {
     controllerAs: 'NowOnlineController',
   });
 
-  NowOnlineController.$inject = ['$scope', '$interval'];
-  function NowOnlineController($scope, $interval) {
+  NowOnlineController.$inject = ['$scope', '$interval', '$window'];
+  function NowOnlineController($scope, $interval, $window) {
     $scope.moveLength = 0;
     $scope.nowWatching = 258;
-    const step = 408;
-    const maxLength = step * 2;
+    let step = 408;
+    let maxLength = step * 2;
+
+    $scope.setSliderStep = () => {
+      $scope.width = $window.innerWidth;
+
+      if ($scope.width <= 480) {
+        step = $scope.width;
+        maxLength = step * 2;
+      } else if ($scope.width > 480 && $scope.width <= 768) {
+        step = $scope.width / 2;
+        maxLength = step * 2;
+      } else if ($scope.width > 768 && $scope.width <= 1024) {
+        step = $scope.width * 0.34;
+        maxLength = step * 2;
+      } else {
+        step = 408;
+        maxLength = step * 2;
+      }
+    };
+
+    $scope.howWithIs = () => {
+      $scope.setSliderStep();
+    };
+    $scope.howWithIs();
+
+    angular.element($window).bind('resize', function () {
+      $scope.setSliderStep();
+    });
 
     $scope.$watch('moveLength', function (newValue) {
       if (newValue === step) {

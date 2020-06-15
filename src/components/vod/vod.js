@@ -13,9 +13,13 @@ export default (ngModule) => {
     let step = 408;
     let maxLength = step * 2;
 
-    angular.element($window).bind('resize', function () {
+    $scope.setSliderStep = () => {
       $scope.width = $window.innerWidth;
-      if ($scope.width > 480 && $scope.width <= 768) {
+
+      if ($scope.width <= 480) {
+        step = $scope.width;
+        maxLength = step * 2;
+      } else if ($scope.width > 480 && $scope.width <= 768) {
         step = $scope.width / 2;
         maxLength = step;
       } else if ($scope.width > 768 && $scope.width <= 1024) {
@@ -25,6 +29,15 @@ export default (ngModule) => {
         step = 408;
         maxLength = step * 2;
       }
+    };
+
+    $scope.howWithIs = () => {
+      $scope.setSliderStep();
+    };
+    $scope.howWithIs();
+
+    angular.element($window).bind('resize', function () {
+      $scope.setSliderStep();
     });
 
     $scope.scrollToPrevPanel = () => {

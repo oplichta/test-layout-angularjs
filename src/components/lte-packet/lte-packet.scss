@@ -64,7 +64,17 @@
     font-size: $title-font-size-mobile;
   }
 }
-
+@media (min-width: 481px) and (max-width: 768px) {
+  .lte-packet-title {
+    font-size: $title-font-size-mobile;
+  }
+  .lte-packet-text {
+    margin: 30px 0;
+  }
+  .lte-packet-footer {
+    margin-top: 30px;
+  }
+}
 @media (min-width: 769px) and (max-width: 1024px) {
   .lte-packet-title {
     font-size: $title-font-size-mobile;
