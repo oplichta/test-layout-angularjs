@@ -6,12 +6,23 @@ export default (ngModule) => {
     controllerAs: 'VodController',
   });
 
-  VodController.$inject = ['$scope'];
-  function VodController($scope) {
+  VodController.$inject = ['$scope', '$window'];
+  function VodController($scope, $window) {
     $scope.moveLength = 0;
     $scope.showBuyNow = false;
-    const step = 408;
-    const maxLength = 816;
+    let step = 408;
+    let maxLength = step * 2;
+
+    angular.element($window).bind('resize', function () {
+      $scope.width = $window.innerWidth;
+      if ($scope.width > 480 && $scope.width <= 768) {
+        step = $scope.width / 2;
+        maxLength = step;
+        console.log(maxLength);
+      } else {
+        step = 408;
+      }
+    });
 
     $scope.scrollToPrevPanel = () => {
       if ($scope.moveLength >= maxLength) {

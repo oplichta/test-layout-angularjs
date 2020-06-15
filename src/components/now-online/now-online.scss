@@ -92,3 +92,11 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .now-online-header {
+    .now-online-title {
+      font-size: 35px;
+    }
+  }
+}

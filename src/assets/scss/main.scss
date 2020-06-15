@@ -3,10 +3,6 @@ $width-long: 66%;
 $width-short: 33%;
 $width-full: 100%;
 
-@mixin mobile-width-full {
-  width: 100%;
-}
-
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -101,7 +97,7 @@ body {
   #support,
   #mobile-app,
   #footer {
-    @include mobile-width-full;
+    width: 100%;
   }
 
   #get-more {
@@ -113,5 +109,26 @@ body {
 
   #footer {
     height: 525px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  #header,
+  #get-more,
+  #vod,
+  #new-packet,
+  #footer {
+    width: 100%;
+  }
+
+  #now-online,
+  #lte-packet,
+  #support,
+  #mobile-app {
+    width: 50%;
+  }
+
+  #lte-packet {
+    height: 420px;
   }
 }
