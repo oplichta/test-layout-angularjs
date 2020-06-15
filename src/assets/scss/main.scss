@@ -132,3 +132,22 @@ body {
     height: 420px;
   }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  #header,
+  #footer,
+  .header-wrapper,
+  .footer-wrapper {
+    width: 100%;
+  }
+
+  #lte-packet,
+  #support,
+  #mobile-app {
+    height: 420px;
+  }
+
+  #support {
+    background-size: cover;
+  }
+}

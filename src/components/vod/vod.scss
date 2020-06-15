@@ -129,3 +129,18 @@
     }
   }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .vod-slider-image {
+    width: 34vw;
+    height: 100%;
+  }
+
+  .vod-footer {
+    justify-content: center;
+    .vod-separator {
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+  }
+}

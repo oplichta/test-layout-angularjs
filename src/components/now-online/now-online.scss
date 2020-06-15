@@ -85,18 +85,33 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@mixin title-mobile-font-size {
   .now-online-header {
     .now-online-title {
-      font-size: 35px;
+      font-size: $title-font-size-mobile;
     }
   }
 }
 
+@media only screen and (max-width: 480px) {
+  @include title-mobile-font-size;
+}
+
 @media only screen and (max-width: 768px) {
+  @include title-mobile-font-size;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  @include title-mobile-font-size;
+
   .now-online-header {
+    justify-content: center;
+    align-items: center;
     .now-online-title {
-      font-size: 35px;
+      margin: 0;
+    }
+    .now-online-separator {
+      margin: 10px 10px;
     }
   }
 }

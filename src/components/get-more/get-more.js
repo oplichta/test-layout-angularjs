@@ -6,11 +6,12 @@ export default (ngModule) => {
     controllerAs: 'GetMoreController',
   });
 
-  GetMoreController.$inject = ['$scope', '$window'];
-  function GetMoreController($scope, $window) {
+  GetMoreController.$inject = ['$scope', '$window', '$interval'];
+  function GetMoreController($scope, $window, $interval) {
     $scope.slideId = 0;
     $scope.moveLength = 0;
     let step = 800;
+    let _id = 1;
 
     angular.element($window).bind('resize', function () {
       $scope.width = $window.innerWidth;
@@ -21,14 +22,6 @@ export default (ngModule) => {
       }
     });
 
-    $scope.goToSlideId = (slideId) => {
-      if (slideId !== $scope.slideId) {
-        $scope.moveLength += step * slideId;
-      } else {
-        $scope.moveLength = 0;
-      }
-    };
-
     $scope.scrollToPanel = (id) => {
       const panelsObj = {
         one: 0,
@@ -38,6 +31,21 @@ export default (ngModule) => {
 
       $scope.moveLength = panelsObj[id];
     };
+
+    // scroll slide in interval
+    $interval(() => {
+      const panelIdObj = {
+        0: 'one',
+        1: 'two',
+        2: 'three',
+      };
+
+      $scope.scrollToPanel(panelIdObj[_id]);
+      $scope.dotActive(panelIdObj[_id]);
+
+      _id += 1;
+      if (_id > 2) _id = 0;
+    }, 8000);
 
     $scope.dotActive = (id) => {
       if (id === 'one' && $scope.moveLength === 0) {

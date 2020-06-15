@@ -70,3 +70,18 @@
     }
   }
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+  .mobile-app-content,
+  .mobile-app-layer-content {
+    height: 420px;
+  }
+
+  .mobile-app-icon-wrapper {
+    margin-top: 150px;
+  }
+
+  .mobile-app-layer-title,
+  .mobile-app-layer-title {
+    font-size: $title-font-size-mobile;
+  }
+}

@@ -50,3 +50,9 @@
   font-size: 14px;
   margin-top: 15px;
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .support-title {
+    font-size: $title-font-size-mobile;
+  }
+}

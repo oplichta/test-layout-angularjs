@@ -6,8 +6,8 @@ export default (ngModule) => {
     controllerAs: 'VodController',
   });
 
-  VodController.$inject = ['$scope', '$window'];
-  function VodController($scope, $window) {
+  VodController.$inject = ['$scope', '$window', '$interval'];
+  function VodController($scope, $window, $interval) {
     $scope.moveLength = 0;
     $scope.showBuyNow = false;
     let step = 408;
@@ -18,9 +18,12 @@ export default (ngModule) => {
       if ($scope.width > 480 && $scope.width <= 768) {
         step = $scope.width / 2;
         maxLength = step;
-        console.log(maxLength);
+      } else if ($scope.width > 768 && $scope.width <= 1024) {
+        step = $scope.width * 0.34;
+        maxLength = step * 2;
       } else {
         step = 408;
+        maxLength = step * 2;
       }
     });
 
@@ -41,6 +44,10 @@ export default (ngModule) => {
         $scope.moveLength = 0;
       }
     };
+
+    $interval(() => {
+      $scope.scrollToNextPanel();
+    }, 6000);
 
     $scope.buyNow = () => {
       alert('You bought a movie!');

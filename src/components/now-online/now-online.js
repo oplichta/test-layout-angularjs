@@ -6,12 +6,12 @@ export default (ngModule) => {
     controllerAs: 'NowOnlineController',
   });
 
-  NowOnlineController.$inject = ['$scope'];
-  function NowOnlineController($scope) {
+  NowOnlineController.$inject = ['$scope', '$interval'];
+  function NowOnlineController($scope, $interval) {
     $scope.moveLength = 0;
     $scope.nowWatching = 258;
     const step = 408;
-    const maxLength = 816;
+    const maxLength = step * 2;
 
     $scope.$watch('moveLength', function (newValue) {
       if (newValue === step) {
@@ -40,5 +40,9 @@ export default (ngModule) => {
         $scope.moveLength = 0;
       }
     };
+
+    $interval(() => {
+      $scope.scrollToNextPanel();
+    }, 4000);
   }
 };
