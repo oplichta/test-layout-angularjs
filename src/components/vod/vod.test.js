@@ -1,12 +1,12 @@
 export default (ngModule) => {
-  describe('FooterComponent', function () {
+  describe('VodComponent', function () {
     var $scope, $element, directiveTemplate;
 
     beforeEach(angular.mock.module('app'));
 
     beforeEach(inject(function ($rootScope, $compile) {
       $scope = $rootScope.$new();
-      directiveTemplate = '<footer></footer>';
+      directiveTemplate = '<vod></vod>';
       $element = $compile(directiveTemplate)($scope);
       $scope.$digest();
     }));
