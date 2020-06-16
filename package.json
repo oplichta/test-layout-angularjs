@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test ./node_modules/karma/bin/karma start",
+    "test": "NODE_ENV=test karma start",
     "build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development"
   },
@@ -21,28 +21,29 @@
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.10.2",
-    "babel-loader": "^8.1.0",
     "angular-mocks": "^1.7.9",
     "autoprefixer": "^9.8.0",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-angularjs-annotate": "^0.10.0",
     "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
     "imagemin": "^7.0.1",
     "img-loader": "^3.0.1",
+    "jasmine": "^3.5.0",
     "karma": "^5.0.9",
     "karma-chrome-launcher": "^3.1.0",
-    "karma-mocha": "^2.0.1",
+    "karma-jasmine": "^3.3.1",
     "karma-webpack": "^4.0.2",
     "mini-css-extract-plugin": "^0.9.0",
-    "mocha": "^7.2.0",
-    "babel-plugin-angularjs-annotate": "^0.10.0",
     "node-sass": "^4.14.1",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^8.0.2",
     "url-loader": "^4.1.0",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "win-node-env": "^0.4.0"
   }
 }

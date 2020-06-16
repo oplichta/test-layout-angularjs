@@ -7,6 +7,7 @@ import ltePacketComponent from './lte-packet/lte-packet';
 import supportComponent from './support/support';
 import mobileAppComponent from './mobile-app/mobile-app';
 import footerComponent from './footer/footer';
+import footerTest from './footer/footer.test';
 
 export default (ngModule) => {
   headerComponent(ngModule);
@@ -18,4 +19,5 @@ export default (ngModule) => {
   supportComponent(ngModule);
   mobileAppComponent(ngModule);
   footerComponent(ngModule);
+  footerTest(ngModule);
 };

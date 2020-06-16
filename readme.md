@@ -1,39 +1,35 @@
-# AngularJS 1x and Webpack 4 Workflow
+# Blumemedia test AngularJS app
 
-No more gulp or bower for your AngularJS 1x project
+Simple app in AngularJS based on Webpack.
+App has animated sliders and RWD.
+Added simple tests in Karma and Jasmine.
 
-## Features 
+App deployed on Firebase. Checki it out on -> [test-layout-angularjs](https://test-layout-angularjs.web.app/)
 
-+ ES6 through Babel loader
-+ SCSS processor
-+ Source map for debugging
-+ Loading Base64 URL for optimizing images
-+ Ng-Annotate-Loader for annotating angular application
-
-## Getting Started 
+## Getting Started
 
 ```
 npm install
 ```
 
-## Running the project 
+## Running the project
 
-For development 
+For development
 
 ```
 npm start
 ```
 
-For production 
+For production
 
 ```
 npm build
 ```
 
-For testing 
+For testing
 
 ```
 npm test
 ```
 
-__Reference from [How to switch from Gulp to Webpack](https://www.valentinog.com/blog/from-gulp-to-webpack-4-tutorial/) and [Angular and Webpack for Modular Applications](https://egghead.io/courses/angular-and-webpack-for-modular-applications)__
+**Reference from [AngularJS Webpack Workflow](https://github.com/dalenguyen/angularjs-webpack-workflow)**
